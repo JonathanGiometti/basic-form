@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <fieldset id="espaco1">
+        <div>
+            <h1 id="titulo"> Cadastro de Informações </h1>
+            <p id="subtitulo">Complete com suas informações pessoais:</p>
+        </div>
+    </fieldset>
+        
+    <fieldset id="espaco2">
+        <form action="inicio.html" method="post"></form>
+       
+        
+    <div class="nomesobrenome">   
+        <div class="campo">
+            <!--A label não está finalizando na mesma linha para que o campo possa ser preenchido ao selecionar a descrição.-->
+            <label for="nome"> <strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+        </div>
+        <div class="campo">
+            <label for="sobrenome" class="sobrenome"> <strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required placeholder="Digite seu sobrenome">
+        </div>
+        
+    </div>  
+        <br>
+        
+        <div class="campo">
+            <label for="email"> <strong>E-mail:</strong></label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu E-mail">
+                    </div>
+        <br>
+
+        <div class="campo">
+            <label for="data"> <strong>Data de Nascimento:</strong></label>
+            <input type="date" name="date" id="data" required max="2000-12-12">
+                    </div>
+        <br>
+        
+        <div class="campo">
+            <label for="genero"> <strong>Gênero:</strong></label>
+                <select name="genero" id="genero" required>
+                    <option></option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="não binario">Não Binário</option>
+                </select>
+        </div>
+        <br>
+
+        <div class="campo">
+            <label> <strong>Estado Civil:</strong>
+        <br>
+        <div>
+                <input type="radio" name="civil" value="solteiro" class="civil"> Solteiro
+                <input type="radio" name="civil" value="casado" class="casado"> Casado 
+        </div>
+        <div>
+                <input type="radio" name="civil" value="divorciado" class="civil"> Divorciado
+                <input type="radio" name="civil" value="viuvo" class="civil"> Viúvo
+            </label>
+        </div>    
+        </div>
+        <br>
+
+        <div class="campo">
+            <Label for="filhos"> <strong>Filhos:</strong></Label>
+                <input type="number" name="filhos" id="filhos" min="0" max="20">
+        </div>
+        <br>
+
+
+        <!-- A utilização do FOR e do ID são para selecionar o check através da frase.-->
+        <div class="final">
+            <a href="https://pt-br.facebook.com/" id="termo">Termo de veracidade com as informações passadas
+                acima.</a>         
+        <br>
+            <input type="checkbox" class="check" id="check"/>
+            <label id="declaro" for="check">Eu declaro que li e estou ciente dos termos.</label>
+            <br>
+        <!-- O botao não está reconhecendo o required pois não é do tipo submit-->
+            <button type="submit">Enviar</button>
+        </div>
+        </form>
+    </fieldset>
+</body>
+
+    </html>

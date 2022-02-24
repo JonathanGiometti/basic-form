@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+} 
+#espaco1{
+    margin-right: 20em;
+    margin-left: 20em;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 1%; 
+    margin-bottom: 1%; 
+    padding: 4px; 
+}
+#espaco2{
+    margin-right: 20em;
+    margin-left: 20em;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px;
+    padding-bottom: 40px;
+    padding-bottom: 1%;
+}
+#titulo, #subtitulo{
+    color: darkorchid;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#titulo{
+    font-size: 32px;
+    margin-bottom: 3px;
+}
+#subtitulo{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+input, select, button{
+    border-radius: 5px;
+    background-color: rgb(250, 243, 243);
+    border: 1px solid #59429d;
+    box-shadow: 1px 1px 1px rgb(0,0,0.2);
+}
+input:hover{
+    background-color: #eee;
+}
+select:hover{
+    background-color: #eee;
+}
+.campo{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.campo label{
+    color:darkblue;
+    display: block;
+}
+.nomesobrenome{
+    display: flex;
+}
+.casado{
+    margin-left: 27px;
+}
+.final{
+    text-align: center;
+    justify-content: center;
+}
+#declaro{
+    color: darkblue;
+}
+#termo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 16px;
+}
+button{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 10px;    
+    margin: 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    
+}
+button:hover{
+    background-color: rgb(139, 136, 136);
+}
+::placeholder{
+    padding: 5px;
+}
